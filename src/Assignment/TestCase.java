@@ -16,6 +16,29 @@ public class TestCase {
         assertEquals(expected, actual);
     }
     @Test
+    public void testRowCount() {
+        Logic data = new Logic();
+        data.inputSize("första raden");
+        data.inputSize("en rad till");
+        data.inputSize("två till");
+        data.inputSize(",");
+
+        int expected = 4;
+        int actual = data.getRows();
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void testStopCheck() {
+        Logic data = new Logic();
+        data.inputSize("stop");
+
+        boolean expected = true;
+        boolean actual = data.stopCheck;
+
+        assertEquals(expected, actual);
+    }
+    @Test
     public void testLetterCountWhenStop() {
         Logic data = new Logic();
         data.inputSize("Stop");
@@ -77,4 +100,5 @@ public class TestCase {
 
         assertEquals(expected, actual);
     }
+
 }

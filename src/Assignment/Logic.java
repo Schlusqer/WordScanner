@@ -11,6 +11,7 @@ public class Logic {
 
     public void inputSize(String input) {
         //Kontrollera om input är stop eller inte
+        //Kollar olika varianter av stop om användaren skriver med stor eller liten bokstav
         if(input.equals("stop") || input.equals("Stop") || input.equals("STOP")) {
             stopCheck = true;
         }

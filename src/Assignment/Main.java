@@ -18,6 +18,7 @@ public class Main {
             if(data.getStopCheck()) {
                 break;
             }
+            //Fortsätt ta input från användaren så länge vi inte ser stop
             userInput = scan.nextLine();
         }
         //Samla data från Logic klassen
