@@ -2,7 +2,6 @@ package Assignment;
 
 
 public class Logic {
-    //test
     //Skapa alla variabler
     private int letterCount = 0;
     private int rowCount = 0;
